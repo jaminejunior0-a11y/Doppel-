@@ -1,0 +1,54 @@
+╔══════════════════════════════════════════════════════════╗
+║         HOW TO INSTALL DOPPEL APK ON YOUR PHONE          ║
+╚══════════════════════════════════════════════════════════╝
+
+YOUR APK IS READY AT:
+~/DoppelNative/build/doppel-debug.apk
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 1: USING TERMUX (Easiest - One Command)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Run this command to copy to Downloads:
+   cp ~/DoppelNative/build/doppel-debug.apk /sdcard/Download/
+
+Then on your Android device:
+   1. Open the "Files" app (or any file manager)
+   2. Navigate to "Downloads" folder
+   3. Tap on "doppel-debug.apk"
+   4. Tap "Install" when prompted
+   5. If asked about "install unknown apps", allow it for your file manager
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 2: USING ADB (If you have a computer)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+On your computer, after connecting phone via USB:
+   adb install ~/DoppelNative/build/doppel-debug.apk
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+METHOD 3: SHARE VIA EMAIL/CLOUD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Copy to shared storage:
+   cp ~/DoppelNative/build/doppel-debug.apk /sdcard/Download/
+
+2. Use any app to share (Gmail, Drive, Telegram, etc.):
+   - Open your file manager
+   - Navigate to Downloads
+   - Long-press doppel-debug.apk
+   - Tap "Share" and choose your preferred method
+   - Send to yourself
+   - Download on phone and install
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+VERIFY YOUR APK IS VALID:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Run this to confirm the APK is correct:
+   aapt list build/doppel-debug.apk
+
+You should see:
+✓ AndroidManifest.xml
+✓ dex/classes.dex  
+✓ lib/arm64-v8a/libproputils.so
